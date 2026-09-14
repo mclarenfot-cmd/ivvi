@@ -1,0 +1,10 @@
+[project]
+name = "modular-auth-orders"
+version = "0.1.0"
+description = "Educational modular Python project with auth and orders services."
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
