@@ -1,16 +1,8 @@
-# Modular Auth Orders
+# ivvi
 
-Учебный Python-проект для практики модульной архитектуры и работы с Git.
+Практическая работа по Git и модульной структуре Python-проекта.
 
-Проект показывает:
-
-- разделение кода на независимые модули;
-- контракт авторизации через абстрактный интерфейс;
-- передачу зависимости в модуль заказов через конструктор;
-- unit-тесты для ключевой бизнес-логики;
-- готовую структуру репозитория с `.gitignore`.
-
-## Структура
+## Файлы
 
 ```text
 src/
@@ -21,32 +13,25 @@ src/
   orders/
     order_service.py
   main.py
-tests/
-  test_auth_service.py
-  test_order_service.py
+  tests/
+    test_auth_service.py
+    test_order_service.py
 ```
 
-## Запуск приложения
+## Запуск
 
 ```bash
 python -m src.main
 ```
 
-## Запуск тестов
+## Тесты
 
 ```bash
-python -m unittest discover -s tests
+python -m unittest discover -s src/tests
 ```
 
-Если установлен `pytest`, можно запустить:
+## Проверка
 
 ```bash
-pytest tests/
+python -m compileall src
 ```
-
-## Проверка синтаксиса
-
-```bash
-python -m compileall src tests
-```
-
